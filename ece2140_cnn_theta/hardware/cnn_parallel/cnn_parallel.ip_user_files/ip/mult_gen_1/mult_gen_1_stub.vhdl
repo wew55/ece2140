@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
--- Date        : Sun Apr 16 19:08:42 2017
+-- Date        : Sun Apr 16 19:08:41 2017
 -- Host        : wen-work running 64-bit Ubuntu 16.04.2 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_1_1/mult_gen_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top mult_gen_1 -prefix
+--               mult_gen_1_ mult_gen_1_stub.vhdl
 -- Design      : mult_gen_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7k70tfbv676-1

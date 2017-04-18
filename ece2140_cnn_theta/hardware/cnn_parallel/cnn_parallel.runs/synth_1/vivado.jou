@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2016.4 (64-bit)
-# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sun Apr 16 20:20:25 2017
-# Process ID: 4455
-# Current directory: /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1
-# Command line: vivado -log cnn_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cnn_top.tcl
-# Log file: /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/cnn_top.vds
-# Journal file: /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/vivado.jou
+# Start of session at: Tue Apr 18 17:50:19 2017
+# Process ID: 13464
+# Current directory: C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1
+# Command line: vivado.exe -log cnn_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cnn_top.tcl
+# Log file: C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/cnn_top.vds
+# Journal file: C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source cnn_top.tcl -notrace

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Apr 17 14:16:01 2017'>
+<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Tue Apr 18 17:52:00 2017'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1756540" description="" />
-  <keyValuePair key="date_generated" value="Mon Apr 17 14:16:01 2017" description="" />
-  <keyValuePair key="os_platform" value="LIN64" description="" />
+  <keyValuePair key="date_generated" value="Tue Apr 18 17:51:59 2017" description="" />
+  <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="XSIM v2016.4 (64-bit)" description="" />
   <keyValuePair key="project_id" value="4777fc83450a44a581cb15fcc119cff4" description="" />
   <keyValuePair key="project_iteration" value="1" description="" />
-  <keyValuePair key="random_id" value="d5622e2c-6018-4cca-95c8-e22f7142f7d8" description="" />
-  <keyValuePair key="registration_id" value="d5622e2c-6018-4cca-95c8-e22f7142f7d8" description="" />
+  <keyValuePair key="random_id" value="40e24d61-43a6-4158-8af2-039c5cf0177a" description="" />
+  <keyValuePair key="registration_id" value="40e24d61-43a6-4158-8af2-039c5cf0177a" description="" />
   <keyValuePair key="route_design" value="FALSE" description="" />
   <keyValuePair key="target_device" value="not_applicable" description="" />
   <keyValuePair key="target_family" value="not_applicable" description="" />
@@ -19,11 +19,11 @@
   <keyValuePair key="tool_flow" value="xsim_vivado" description="" />
  </section>
  <section name="user_environment" level="1" order="2" description="">
-  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz" description="" />
-  <keyValuePair key="cpu_speed" value="3846.382 MHz" description="" />
-  <keyValuePair key="os_name" value="Ubuntu" description="" />
-  <keyValuePair key="os_release" value="Ubuntu 16.04.2 LTS" description="" />
-  <keyValuePair key="system_ram" value="16.000 GB" description="" />
+  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz" description="" />
+  <keyValuePair key="cpu_speed" value="2394 MHz" description="" />
+  <keyValuePair key="os_name" value="Microsoft Windows 8 or later , 64-bit" description="" />
+  <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
+  <keyValuePair key="system_ram" value="8.000 GB" description="" />
   <keyValuePair key="total_processors" value="1" description="" />
  </section>
  <section name="vivado_usage" level="1" order="3" description="">
@@ -40,9 +40,9 @@
    <keyValuePair key="vhdl2008" value="false" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="compiler_memory" value="404524_KB" description="" />
-   <keyValuePair key="compiler_time" value="6.57_sec" description="" />
-   <keyValuePair key="simulation_image_code" value="1072 KB" description="" />
+   <keyValuePair key="compiler_memory" value="239040_KB" description="" />
+   <keyValuePair key="compiler_time" value="15.98_sec" description="" />
+   <keyValuePair key="simulation_image_code" value="1195 KB" description="" />
    <keyValuePair key="simulation_image_data" value="320 KB" description="" />
    <keyValuePair key="total_instances" value="516" description="" />
    <keyValuePair key="total_nets" value="8556" description="" />

@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Sun Apr 16 20:24:47 2017
-| Host         : wen-work running 64-bit Ubuntu 16.04.2 LTS
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue Apr 18 17:59:04 2017
+| Host         : DESKTOP-1Q958FF running 64-bit major release  (build 9200)
 | Command      : report_drc -file cnn_top_drc_routed.rpt -pb cnn_top_drc_routed.pb -rpx cnn_top_drc_routed.rpx
 | Design       : cnn_top
 | Device       : xc7k70tfbv676-1
@@ -20,11 +20,11 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_cnn_top
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2737
+             Violations found: 2733
 +-----------+------------------+-------------------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                                       | Violations |
 +-----------+------------------+-------------------------------------------------------------------+------------+
@@ -32,10 +32,10 @@ Table of Contents
 | UCIO-1    | Critical Warning | Unconstrained Logical Port                                        | 1          |
 | CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties               | 1          |
 | CHECK-3   | Warning          | Report rule limit reached                                         | 2          |
-| DPIP-1    | Warning          | Input pipelining                                                  | 108        |
+| DPIP-1    | Warning          | Input pipelining                                                  | 106        |
 | DPIR-1    | Warning          | Asynchronous driver check                                         | 1920       |
-| DPOP-1    | Warning          | PREG Output pipelining                                            | 41         |
-| DPOP-2    | Warning          | MREG Output pipelining                                            | 2          |
+| DPOP-1    | Warning          | PREG Output pipelining                                            | 40         |
+| DPOP-2    | Warning          | MREG Output pipelining                                            | 1          |
 | DPOR-1    | Warning          | Asynchronous load check                                           | 580        |
 | IOSR-1    | Warning          | IOB set reset sharing                                             | 1          |
 | REQP-1839 | Warning          | RAMB36 async control check                                        | 20         |
@@ -48,12 +48,12 @@ Table of Contents
 -----------------
 NSTD-1#1 Critical Warning
 Unspecified I/O Standard  
-152 out of 152 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: biasIn[15:0], sizeInput[15:0], dataIn[15:0], data_out_f[15:0], featuresOut[15:0], weightIn[15:0], mode_sel, rst, cpuTask, writeWeight, writeBias, validIn, valid_out, kernelSize[15:0], clk (the first 15 of 17 listed).
+152 out of 152 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: dataIn[15:0], sizeInput[15:0], biasIn[15:0], data_out_f[15:0], featuresOut[15:0], weightIn[15:0], mode_sel, rst, cpuTask, writeWeight, writeBias, validIn, valid_out, sizeOutput[15:0], kernelSize[15:0] (the first 15 of 17 listed).
 Related violations: <none>
 
 UCIO-1#1 Critical Warning
 Unconstrained Logical Port  
-152 out of 152 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: biasIn[15:0], sizeInput[15:0], dataIn[15:0], data_out_f[15:0], featuresOut[15:0], weightIn[15:0], mode_sel, rst, cpuTask, writeWeight, writeBias, validIn, valid_out, kernelSize[15:0], clk (the first 15 of 17 listed).
+152 out of 152 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: dataIn[15:0], sizeInput[15:0], biasIn[15:0], data_out_f[15:0], featuresOut[15:0], weightIn[15:0], mode_sel, rst, cpuTask, writeWeight, writeBias, validIn, valid_out, sizeOutput[15:0], kernelSize[15:0] (the first 15 of 17 listed).
 Related violations: <none>
 
 CFGBVS-1#1 Warning
@@ -81,540 +81,530 @@ Related violations: <none>
 
 DPIP-1#1 Warning
 Input pipelining  
-DSP controller/counter_kernel2 input controller/counter_kernel2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#2 Warning
 Input pipelining  
-DSP controller/counter_kernel2 input controller/counter_kernel2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#3 Warning
 Input pipelining  
-DSP para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#4 Warning
 Input pipelining  
-DSP para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#5 Warning
 Input pipelining  
-DSP para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#6 Warning
 Input pipelining  
-DSP para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].router/addition_time_reg input para[0].datapath[0].router/addition_time_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#7 Warning
 Input pipelining  
-DSP para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].router/addition_time_reg input para[0].datapath[0].router/addition_time_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#8 Warning
 Input pipelining  
-DSP para[0].datapath[0].router/addition_time_reg input para[0].datapath[0].router/addition_time_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].router/addition_time_reg input para[0].datapath[0].router/addition_time_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#9 Warning
 Input pipelining  
-DSP para[0].datapath[0].router/addition_time_reg input para[0].datapath[0].router/addition_time_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].router/multiplication_time_reg input para[0].datapath[0].router/multiplication_time_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#10 Warning
 Input pipelining  
-DSP para[0].datapath[0].router/addition_time_reg input para[0].datapath[0].router/addition_time_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].router/multiplication_time_reg input para[0].datapath[0].router/multiplication_time_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#11 Warning
 Input pipelining  
-DSP para[0].datapath[0].router/multiplication_time_reg input para[0].datapath[0].router/multiplication_time_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[0].router/multiplication_time_reg input para[0].datapath[0].router/multiplication_time_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#12 Warning
 Input pipelining  
-DSP para[0].datapath[0].router/multiplication_time_reg input para[0].datapath[0].router/multiplication_time_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#13 Warning
 Input pipelining  
-DSP para[0].datapath[0].router/multiplication_time_reg input para[0].datapath[0].router/multiplication_time_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#14 Warning
 Input pipelining  
-DSP para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#15 Warning
 Input pipelining  
-DSP para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#16 Warning
 Input pipelining  
-DSP para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#17 Warning
 Input pipelining  
-DSP para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#18 Warning
 Input pipelining  
-DSP para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#19 Warning
 Input pipelining  
-DSP para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#20 Warning
 Input pipelining  
-DSP para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#21 Warning
 Input pipelining  
-DSP para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#22 Warning
 Input pipelining  
-DSP para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#23 Warning
 Input pipelining  
-DSP para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#24 Warning
 Input pipelining  
-DSP para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#25 Warning
 Input pipelining  
-DSP para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#26 Warning
 Input pipelining  
-DSP para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#27 Warning
 Input pipelining  
-DSP para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#28 Warning
 Input pipelining  
-DSP para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#29 Warning
 Input pipelining  
-DSP para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#30 Warning
 Input pipelining  
-DSP para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#31 Warning
 Input pipelining  
-DSP para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#32 Warning
 Input pipelining  
-DSP para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#33 Warning
 Input pipelining  
-DSP para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#34 Warning
 Input pipelining  
-DSP para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#35 Warning
 Input pipelining  
-DSP para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#36 Warning
 Input pipelining  
-DSP para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#37 Warning
 Input pipelining  
-DSP para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#38 Warning
 Input pipelining  
-DSP para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#39 Warning
 Input pipelining  
-DSP para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#40 Warning
 Input pipelining  
-DSP para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#41 Warning
 Input pipelining  
-DSP para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#42 Warning
 Input pipelining  
-DSP para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#43 Warning
 Input pipelining  
-DSP para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#44 Warning
 Input pipelining  
-DSP para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#45 Warning
 Input pipelining  
-DSP para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#46 Warning
 Input pipelining  
-DSP para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#47 Warning
 Input pipelining  
-DSP para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#48 Warning
 Input pipelining  
-DSP para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#49 Warning
 Input pipelining  
-DSP para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#50 Warning
 Input pipelining  
-DSP para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#51 Warning
 Input pipelining  
-DSP para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#52 Warning
 Input pipelining  
-DSP para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#53 Warning
 Input pipelining  
-DSP para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#54 Warning
 Input pipelining  
-DSP para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#55 Warning
 Input pipelining  
-DSP para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#56 Warning
 Input pipelining  
-DSP para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#57 Warning
 Input pipelining  
-DSP para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#58 Warning
 Input pipelining  
-DSP para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#59 Warning
 Input pipelining  
-DSP para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#60 Warning
 Input pipelining  
-DSP para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#61 Warning
 Input pipelining  
-DSP para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#62 Warning
 Input pipelining  
-DSP para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#63 Warning
 Input pipelining  
-DSP para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#64 Warning
 Input pipelining  
-DSP para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#65 Warning
 Input pipelining  
-DSP para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#66 Warning
 Input pipelining  
-DSP para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#67 Warning
 Input pipelining  
-DSP para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#68 Warning
 Input pipelining  
-DSP para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#69 Warning
 Input pipelining  
-DSP para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#70 Warning
 Input pipelining  
-DSP para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#71 Warning
 Input pipelining  
-DSP para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#72 Warning
 Input pipelining  
-DSP para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#73 Warning
 Input pipelining  
-DSP para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#74 Warning
 Input pipelining  
-DSP para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#75 Warning
 Input pipelining  
-DSP para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#76 Warning
 Input pipelining  
-DSP para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#77 Warning
 Input pipelining  
-DSP para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#78 Warning
 Input pipelining  
-DSP para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#79 Warning
 Input pipelining  
-DSP para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#80 Warning
 Input pipelining  
-DSP para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#81 Warning
 Input pipelining  
-DSP para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#82 Warning
 Input pipelining  
-DSP para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#83 Warning
 Input pipelining  
-DSP para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#84 Warning
 Input pipelining  
-DSP para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#85 Warning
 Input pipelining  
-DSP para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#86 Warning
 Input pipelining  
-DSP para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#87 Warning
 Input pipelining  
-DSP para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#88 Warning
 Input pipelining  
-DSP para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#89 Warning
 Input pipelining  
-DSP para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#90 Warning
 Input pipelining  
-DSP para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#91 Warning
 Input pipelining  
-DSP para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#92 Warning
 Input pipelining  
-DSP para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#93 Warning
 Input pipelining  
-DSP para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#94 Warning
 Input pipelining  
-DSP para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#95 Warning
 Input pipelining  
-DSP para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#96 Warning
 Input pipelining  
-DSP para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#97 Warning
 Input pipelining  
-DSP para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#98 Warning
 Input pipelining  
-DSP para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#99 Warning
 Input pipelining  
-DSP para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#100 Warning
 Input pipelining  
-DSP para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#101 Warning
 Input pipelining  
-DSP para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#102 Warning
 Input pipelining  
-DSP para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#103 Warning
 Input pipelining  
-DSP para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#104 Warning
 Input pipelining  
-DSP para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#105 Warning
 Input pipelining  
-DSP para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#106 Warning
-Input pipelining  
-DSP para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive input para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#107 Warning
-Input pipelining  
 DSP para[9].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[9].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
-DPIP-1#108 Warning
+DPIP-1#106 Warning
 Input pipelining  
 DSP para[9].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg input para[9].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
@@ -10221,215 +10211,205 @@ Related violations: <none>
 
 DPOP-1#1 Warning
 PREG Output pipelining  
-DSP controller/counter_kernel2 output controller/counter_kernel2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#2 Warning
 PREG Output pipelining  
-DSP para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[0].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#3 Warning
 PREG Output pipelining  
-DSP para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[0].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#4 Warning
 PREG Output pipelining  
-DSP para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[0].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#5 Warning
 PREG Output pipelining  
-DSP para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[0].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#6 Warning
 PREG Output pipelining  
-DSP para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[1].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#7 Warning
 PREG Output pipelining  
-DSP para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[1].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#8 Warning
 PREG Output pipelining  
-DSP para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[1].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#9 Warning
 PREG Output pipelining  
-DSP para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[1].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#10 Warning
 PREG Output pipelining  
-DSP para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[2].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#11 Warning
 PREG Output pipelining  
-DSP para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[2].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#12 Warning
 PREG Output pipelining  
-DSP para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[2].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#13 Warning
 PREG Output pipelining  
-DSP para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[2].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#14 Warning
 PREG Output pipelining  
-DSP para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[3].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#15 Warning
 PREG Output pipelining  
-DSP para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[3].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#16 Warning
 PREG Output pipelining  
-DSP para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[3].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#17 Warning
 PREG Output pipelining  
-DSP para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[3].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#18 Warning
 PREG Output pipelining  
-DSP para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[4].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#19 Warning
 PREG Output pipelining  
-DSP para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[4].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#20 Warning
 PREG Output pipelining  
-DSP para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[4].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#21 Warning
 PREG Output pipelining  
-DSP para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[4].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#22 Warning
 PREG Output pipelining  
-DSP para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[5].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#23 Warning
 PREG Output pipelining  
-DSP para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[5].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#24 Warning
 PREG Output pipelining  
-DSP para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[5].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#25 Warning
 PREG Output pipelining  
-DSP para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[5].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#26 Warning
 PREG Output pipelining  
-DSP para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[6].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#27 Warning
 PREG Output pipelining  
-DSP para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[6].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#28 Warning
 PREG Output pipelining  
-DSP para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[6].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#29 Warning
 PREG Output pipelining  
-DSP para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[6].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#30 Warning
 PREG Output pipelining  
-DSP para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[7].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#31 Warning
 PREG Output pipelining  
-DSP para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[7].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#32 Warning
 PREG Output pipelining  
-DSP para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[7].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#33 Warning
 PREG Output pipelining  
-DSP para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[7].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#34 Warning
 PREG Output pipelining  
-DSP para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[8].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#35 Warning
 PREG Output pipelining  
-DSP para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[8].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#36 Warning
 PREG Output pipelining  
-DSP para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[8].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#37 Warning
 PREG Output pipelining  
-DSP para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[8].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#38 Warning
 PREG Output pipelining  
-DSP para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[9].datapath[0].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#39 Warning
 PREG Output pipelining  
-DSP para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[9].datapath[0].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#40 Warning
-PREG Output pipelining  
 DSP para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive output para[9].datapath[1].convolution/add1/U0/xst_addsub/xbip_addsub.i_a_b_nogrowth.not_unsigned_max_width.i_xbip_addsub/addsub_usecase.i_addsub/i_synth_option.i_synth_model/opt_vx7.i_uniwrap/i_primitive/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
-DPOP-1#41 Warning
+DPOP-1#40 Warning
 PREG Output pipelining  
 DSP para[9].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg output para[9].datapath[1].convolution/m1/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-2#1 Warning
-MREG Output pipelining  
-DSP controller/counter_kernel2 multiplier stage controller/counter_kernel2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#2 Warning
 MREG Output pipelining  
 DSP para[0].datapath[0].router/multiplication_time_reg multiplier stage para[0].datapath[0].router/multiplication_time_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
@@ -13336,107 +13316,107 @@ Related violations: <none>
 
 IOSR-1#1 Warning
 IOB set reset sharing  
-IO validIn connects to flops which have these para[0].datapath[0].router/enable_write_pixel[0]_i_1_n_0, para[0].datapath[1].router/enable_write_pixel[0]_i_1__0_n_0, para[1].datapath[0].router/enable_write_pixel[0]_i_1__1_n_0, para[3].datapath[1].router/enable_write_pixel[0]_i_1__6_n_0, para[4].datapath[0].router/enable_write_pixel[0]_i_1__7_n_0, para[4].datapath[1].router/enable_write_pixel[0]_i_1__8_n_0, para[5].datapath[0].router/enable_write_pixel[0]_i_1__9_n_0, para[5].datapath[1].router/enable_write_pixel[0]_i_1__10_n_0, para[1].datapath[1].router/enable_write_pixel[0]_i_1__2_n_0, para[6].datapath[0].router/enable_write_pixel[0]_i_1__11_n_0, para[6].datapath[1].router/enable_write_pixel[0]_i_1__12_n_0, para[7].datapath[0].router/enable_write_pixel[0]_i_1__13_n_0, para[7].datapath[1].router/enable_write_pixel[0]_i_1__14_n_0, para[8].datapath[0].router/enable_write_pixel[0]_i_1__15_n_0, para[8].datapath[1].router/enable_write_pixel[0]_i_1__16_n_0 (the first 15 of 21 listed) set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+IO validIn connects to flops which have these para[4].datapath[1].router/enable_write_pixel[0]_i_1__8_n_0, para[0].datapath[0].router/enable_write_pixel[0]_i_1_n_0, para[4].datapath[0].router/enable_write_pixel[0]_i_1__7_n_0, para[0].datapath[1].router/enable_write_pixel[0]_i_1__0_n_0, para[1].datapath[0].router/enable_write_pixel[0]_i_1__1_n_0, para[3].datapath[1].router/enable_write_pixel[0]_i_1__6_n_0, para[5].datapath[0].router/enable_write_pixel[0]_i_1__9_n_0, para[5].datapath[1].router/enable_write_pixel[0]_i_1__10_n_0, para[6].datapath[1].router/enable_write_pixel[0]_i_1__12_n_0, para[1].datapath[1].router/enable_write_pixel[0]_i_1__2_n_0, para[6].datapath[0].router/enable_write_pixel[0]_i_1__11_n_0, para[2].datapath[1].router/enable_write_pixel[0]_i_1__4_n_0, para[7].datapath[0].router/enable_write_pixel[0]_i_1__13_n_0, para[7].datapath[1].router/enable_write_pixel[0]_i_1__14_n_0, para[8].datapath[0].router/enable_write_pixel[0]_i_1__15_n_0 (the first 15 of 21 listed) set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
 Related violations: <none>
 
 REQP-1839#1 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[10] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[7]) which is driven by a register (para[0].datapath[0].router/address_write_reg[7]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[10] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[7]) which is driven by a register (para[0].datapath[0].router/address_write_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#2 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[11] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[8]) which is driven by a register (para[0].datapath[0].router/address_write_reg[8]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[11] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[8]) which is driven by a register (para[0].datapath[0].router/address_write_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#3 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[12] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[9]) which is driven by a register (para[0].datapath[0].router/address_write_reg[9]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[12] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[9]) which is driven by a register (para[0].datapath[0].router/address_write_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#4 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[13] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[10]) which is driven by a register (para[0].datapath[0].router/address_write_reg[10]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[13] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[10]) which is driven by a register (para[0].datapath[0].router/address_write_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#5 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[14] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[11]) which is driven by a register (para[0].datapath[0].router/address_write_reg[11]_rep__1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[14] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[11]) which is driven by a register (para[0].datapath[0].router/address_write_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#6 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[3] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[0]) which is driven by a register (para[0].datapath[0].router/address_write_reg[0]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[3] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[0]) which is driven by a register (para[0].datapath[0].router/address_write_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#7 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[4] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[1]) which is driven by a register (para[0].datapath[0].router/address_write_reg[1]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[4] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[1]) which is driven by a register (para[0].datapath[0].router/address_write_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#8 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[5] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[2]) which is driven by a register (para[0].datapath[0].router/address_write_reg[2]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[5] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[2]) which is driven by a register (para[0].datapath[0].router/address_write_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#9 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[6] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[3]) which is driven by a register (para[0].datapath[0].router/address_write_reg[3]_rep__1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[6] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[3]) which is driven by a register (para[0].datapath[0].router/address_write_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#10 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[7] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[4]) which is driven by a register (para[0].datapath[0].router/address_write_reg[4]_rep__1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[7] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[4]) which is driven by a register (para[0].datapath[0].router/address_write_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#11 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[8] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[5]) which is driven by a register (para[0].datapath[0].router/address_write_reg[5]_rep__1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[8] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[5]) which is driven by a register (para[0].datapath[0].router/address_write_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#12 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[9] (net: para[1].datapath[1].router/BRAM_1_data/address_write_reg[11]_rep__1[6]) which is driven by a register (para[0].datapath[0].router/address_write_reg[6]_rep__1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRARDADDR[9] (net: para[0].datapath[0].router/BRAM_1_data/addr_write[6]) which is driven by a register (para[0].datapath[0].router/address_write_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#13 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[10] (net: para[1].datapath[1].router/BRAM_1_data/address_read_reg[11][7]) which is driven by a register (para[1].datapath[1].router/address_read_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[10] (net: para[0].datapath[0].router/BRAM_1_data/address_read_reg[11][7]) which is driven by a register (para[0].datapath[0].router/address_read_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#14 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[11] (net: para[1].datapath[1].router/BRAM_1_data/address_read_reg[11][8]) which is driven by a register (para[1].datapath[1].router/address_read_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[11] (net: para[0].datapath[0].router/BRAM_1_data/address_read_reg[11][8]) which is driven by a register (para[0].datapath[0].router/address_read_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#15 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[12] (net: para[1].datapath[1].router/BRAM_1_data/address_read_reg[11][9]) which is driven by a register (para[1].datapath[1].router/address_read_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[12] (net: para[0].datapath[0].router/BRAM_1_data/address_read_reg[11][9]) which is driven by a register (para[0].datapath[0].router/address_read_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#16 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[13] (net: para[1].datapath[1].router/BRAM_1_data/address_read_reg[11][10]) which is driven by a register (para[1].datapath[1].router/address_read_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[13] (net: para[0].datapath[0].router/BRAM_1_data/address_read_reg[11][10]) which is driven by a register (para[0].datapath[0].router/address_read_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#17 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[14] (net: para[1].datapath[1].router/BRAM_1_data/address_read_reg[11][11]) which is driven by a register (para[1].datapath[1].router/address_read_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[14] (net: para[0].datapath[0].router/BRAM_1_data/address_read_reg[11][11]) which is driven by a register (para[0].datapath[0].router/address_read_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#18 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[7] (net: para[1].datapath[1].router/BRAM_1_data/address_read_reg[11][4]) which is driven by a register (para[1].datapath[1].router/address_read_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[7] (net: para[0].datapath[0].router/BRAM_1_data/address_read_reg[11][4]) which is driven by a register (para[0].datapath[0].router/address_read_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#19 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[8] (net: para[1].datapath[1].router/BRAM_1_data/address_read_reg[11][5]) which is driven by a register (para[1].datapath[1].router/address_read_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[8] (net: para[0].datapath[0].router/BRAM_1_data/address_read_reg[11][5]) which is driven by a register (para[0].datapath[0].router/address_read_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#20 Warning
 RAMB36 async control check  
-The RAMB36E1 para[1].datapath[1].router/BRAM_1_data/RAM_reg_0 has an input control pin para[1].datapath[1].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[9] (net: para[1].datapath[1].router/BRAM_1_data/address_read_reg[11][6]) which is driven by a register (para[1].datapath[1].router/address_read_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 para[0].datapath[0].router/BRAM_1_data/RAM_reg_0 has an input control pin para[0].datapath[0].router/BRAM_1_data/RAM_reg_0/ADDRBWRADDR[9] (net: para[0].datapath[0].router/BRAM_1_data/address_read_reg[11][6]) which is driven by a register (para[0].datapath[0].router/address_read_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#1 Warning

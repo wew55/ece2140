@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="mult_gen_1_synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1492384138">
+<GenRun Id="mult_gen_1_synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1492552204">
+  <File Type="RDS-PROPCONSTRS" Name="mult_gen_1_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="mult_gen_1.tcl"/>
   <File Type="RDS-RDS" Name="mult_gen_1.vds"/>
+  <File Type="RDS-UTIL" Name="mult_gen_1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mult_gen_1_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mult_gen_1.dcp"/>
   <File Type="VDS-TIMINGSUMMARY" Name="mult_gen_1_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="mult_gen_1_timing_summary_synth.pb"/>
-  <File Type="RDS-DCP" Name="mult_gen_1.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="mult_gen_1_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="mult_gen_1_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="mult_gen_1_drc_synth.rpt"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mult_gen_1">
     <File Path="$PSRCDIR/sources_1/ip/mult_gen_1_1/mult_gen_1.xci">
       <FileInfo>

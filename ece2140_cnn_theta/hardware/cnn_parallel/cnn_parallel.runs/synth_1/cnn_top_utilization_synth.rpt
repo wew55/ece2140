@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Sun Apr 16 20:21:30 2017
-| Host         : wen-work running 64-bit Ubuntu 16.04.2 LTS
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue Apr 18 17:52:52 2017
+| Host         : DESKTOP-1Q958FF running 64-bit major release  (build 9200)
 | Command      : report_utilization -file cnn_top_utilization_synth.rpt -pb cnn_top_utilization_synth.pb
 | Design       : cnn_top
 | Device       : 7k70tfbv676-1
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 6738 |     0 |     41000 | 16.43 |
-|   LUT as Logic             | 6617 |     0 |     41000 | 16.14 |
+| Slice LUTs*                | 6733 |     0 |     41000 | 16.42 |
+|   LUT as Logic             | 6612 |     0 |     41000 | 16.13 |
 |   LUT as Memory            |  121 |     0 |     13400 |  0.90 |
 |     LUT as Distributed RAM |  120 |     0 |           |       |
 |     LUT as Shift Register  |    1 |     0 |           |       |
-| Slice Registers            | 6069 |     0 |     82000 |  7.40 |
-|   Register as Flip Flop    | 6069 |     0 |     82000 |  7.40 |
+| Slice Registers            | 6068 |     0 |     82000 |  7.40 |
+|   Register as Flip Flop    | 6068 |     0 |     82000 |  7.40 |
 |   Register as Latch        |    0 |     0 |     82000 |  0.00 |
 | F7 Muxes                   |    0 |     0 |     20500 |  0.00 |
 | F8 Muxes                   |    0 |     0 |     10250 |  0.00 |
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 355   |          Yes |           - |          Set |
-| 5001  |          Yes |           - |        Reset |
+| 356   |          Yes |           - |          Set |
+| 4999  |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 713   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -84,8 +84,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |    3 |     0 |       240 |  1.25 |
-|   DSP48E1 only |    3 |       |           |       |
+| DSPs           |    2 |     0 |       240 |  0.83 |
+|   DSP48E1 only |    2 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -156,23 +156,23 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     | 5001 |        Flop & Latch |
-| LUT3     | 1952 |                 LUT |
-| LUT2     | 1554 |                 LUT |
+| FDCE     | 4999 |        Flop & Latch |
+| LUT3     | 1950 |                 LUT |
+| LUT2     | 1570 |                 LUT |
 | LUT1     | 1501 |                 LUT |
-| LUT4     | 1457 |                 LUT |
+| LUT4     | 1426 |                 LUT |
 | LUT6     | 1262 |                 LUT |
 | LUT5     |  972 |                 LUT |
 | CARRY4   |  791 |          CarryLogic |
 | FDRE     |  713 |        Flop & Latch |
-| FDPE     |  355 |        Flop & Latch |
+| FDPE     |  356 |        Flop & Latch |
 | RAMD32   |  180 |  Distributed Memory |
 | IBUF     |  135 |                  IO |
 | RAMB36E1 |  120 |        Block Memory |
 | RAMS32   |   60 |  Distributed Memory |
 | OBUF     |   17 |                  IO |
 | RAMB18E1 |   10 |        Block Memory |
-| DSP48E1  |    3 |    Block Arithmetic |
+| DSP48E1  |    2 |    Block Arithmetic |
 | SRL16E   |    1 |  Distributed Memory |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+

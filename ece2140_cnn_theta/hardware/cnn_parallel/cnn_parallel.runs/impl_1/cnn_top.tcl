@@ -42,7 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -50,12 +49,24 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/impl_1/cnn_top.dcp
-  set_property webtalk.parent_dir /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.cache/wt [current_project]
-  set_property parent.project_path /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.xpr [current_project]
-  set_property ip_output_repo /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.cache/ip [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.xpr [current_project]
+  set_property ip_repo_paths C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/CNN_SoC [current_project]
+  set_property ip_output_repo C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/cnn_top.dcp
+  add_files -quiet c:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/c_addsub_0/c_addsub_0.dcp
+  set_property netlist_only true [get_files c:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/c_addsub_0/c_addsub_0.dcp]
+  add_files -quiet c:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp
+  set_property netlist_only true [get_files c:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_0/mult_gen_0.dcp]
+  add_files -quiet C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_1_1/mult_gen_1.dcp
+  set_property netlist_only true [get_files C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_1_1/mult_gen_1.dcp]
+  read_xdc -mode out_of_context -ref mult_gen_1 -cells U0 c:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_1_1/mult_gen_1_ooc.xdc
+  set_property processing_order EARLY [get_files c:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_1_1/mult_gen_1_ooc.xdc]
+  read_xdc C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/constrs_1/new/clock1.xdc
+  link_design -top cnn_top -part xc7k70tfbv676-1
   write_hwdef -file cnn_top.hwdef
   close_msg_db -file init_design.pb
 } RESULT]

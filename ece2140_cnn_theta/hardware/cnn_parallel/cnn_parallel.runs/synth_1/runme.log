@@ -4,7 +4,7 @@
 
 
 ****** Vivado v2016.4 (64-bit)
-  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
   **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
@@ -14,54 +14,54 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4459 
+INFO: Helper process launched with PID 17272 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1066.266 ; gain = 134.086 ; free physical = 645 ; free virtual = 18929
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 293.457 ; gain = 83.637
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'cnn_top' [/home/wen/Documents/CNN_SoC/src_parallel/cnn_top.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'cnn_top' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/cnn_top.vhd:45]
 	Parameter PARALELISM bound to: 2 - type: integer 
 	Parameter Z_PARALELISM bound to: 10 - type: integer 
-INFO: [Synth 8-3491] module 'mult_gen_1' declared at '/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'm2' of component 'mult_gen_1' [/home/wen/Documents/CNN_SoC/src_parallel/cnn_top.vhd:112]
-INFO: [Synth 8-638] synthesizing module 'mult_gen_1' [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/realtime/mult_gen_1_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'mult_gen_1' declared at '/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'm3' of component 'mult_gen_1' [/home/wen/Documents/CNN_SoC/src_parallel/cnn_top.vhd:117]
-INFO: [Synth 8-3491] module 'mult_gen_1' declared at '/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'm4' of component 'mult_gen_1' [/home/wen/Documents/CNN_SoC/src_parallel/cnn_top.vhd:122]
-INFO: [Synth 8-638] synthesizing module 'controller' [/home/wen/Documents/CNN_SoC/src_parallel/controller.vhd:43]
-INFO: [Synth 8-226] default block is never used [/home/wen/Documents/CNN_SoC/src_parallel/controller.vhd:102]
-INFO: [Synth 8-256] done synthesizing module 'controller' (1#1) [/home/wen/Documents/CNN_SoC/src_parallel/controller.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'router' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:50]
+INFO: [Synth 8-3491] module 'mult_gen_1' declared at 'C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'm2' of component 'mult_gen_1' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/cnn_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_1' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/realtime/mult_gen_1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'mult_gen_1' declared at 'C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'm3' of component 'mult_gen_1' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/cnn_top.vhd:117]
+INFO: [Synth 8-3491] module 'mult_gen_1' declared at 'C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'm4' of component 'mult_gen_1' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/cnn_top.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/controller.vhd:43]
+INFO: [Synth 8-226] default block is never used [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/controller.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'controller' (1#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/controller.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'router' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:50]
 	Parameter MOD_LINE bound to: 2 - type: integer 
-WARNING: [Synth 8-614] signal 'initialValue' is read in the process but is not in the sensitivity list [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:142]
-WARNING: [Synth 8-614] signal 'initialValue' is read in the process but is not in the sensitivity list [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:207]
-INFO: [Synth 8-638] synthesizing module 'bram' [/home/wen/Documents/CNN_SoC/src_parallel/bram.vhd:23]
+WARNING: [Synth 8-614] signal 'initialValue' is read in the process but is not in the sensitivity list [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:142]
+WARNING: [Synth 8-614] signal 'initialValue' is read in the process but is not in the sensitivity list [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'bram' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/bram.vhd:23]
 	Parameter WIDTH bound to: 17 - type: integer 
 	Parameter DEPTH bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bram' (2#1) [/home/wen/Documents/CNN_SoC/src_parallel/bram.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'bram__parameterized0' [/home/wen/Documents/CNN_SoC/src_parallel/bram.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'bram' (2#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/bram.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'bram__parameterized0' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/bram.vhd:23]
 	Parameter WIDTH bound to: 16 - type: integer 
 	Parameter DEPTH bound to: 12 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bram__parameterized0' (2#1) [/home/wen/Documents/CNN_SoC/src_parallel/bram.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'bram__parameterized1' [/home/wen/Documents/CNN_SoC/src_parallel/bram.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'bram__parameterized0' (2#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/bram.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'bram__parameterized1' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/bram.vhd:23]
 	Parameter WIDTH bound to: 16 - type: integer 
 	Parameter DEPTH bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bram__parameterized1' (2#1) [/home/wen/Documents/CNN_SoC/src_parallel/bram.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'router' (3#1) [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:50]
-INFO: [Synth 8-638] synthesizing module 'convo' [/home/wen/Documents/CNN_SoC/src_parallel/convo.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'fullyconnected' [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.srcs/sources_1/new/fullyconnected.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'fullyconnected' (4#1) [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.srcs/sources_1/new/fullyconnected.vhd:40]
-INFO: [Synth 8-3491] module 'mult_gen_0' declared at '/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'm1' of component 'mult_gen_0' [/home/wen/Documents/CNN_SoC/src_parallel/convo.vhd:94]
-INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/realtime/mult_gen_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'c_addsub_0' declared at '/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/realtime/c_addsub_0_stub.vhdl:5' bound to instance 'add1' of component 'c_addsub_0' [/home/wen/Documents/CNN_SoC/src_parallel/convo.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/realtime/c_addsub_0_stub.vhdl:14]
-INFO: [Synth 8-256] done synthesizing module 'convo' (5#1) [/home/wen/Documents/CNN_SoC/src_parallel/convo.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'fifo' [/home/wen/Documents/CNN_SoC/src_parallel/fifo.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'fifo' (6#1) [/home/wen/Documents/CNN_SoC/src_parallel/fifo.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'fifo_parallel' [/home/wen/Documents/CNN_SoC/src_parallel/fifo_parallel.vhd:19]
-INFO: [Synth 8-638] synthesizing module 'bram__parameterized2' [/home/wen/Documents/CNN_SoC/src_parallel/bram.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'bram__parameterized1' (2#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/bram.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'router' (3#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'convo' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/convo.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'fullyconnected' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/new/fullyconnected.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fullyconnected' (4#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/new/fullyconnected.vhd:40]
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'm1' of component 'mult_gen_0' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/convo.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/realtime/mult_gen_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'c_addsub_0' declared at 'C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/realtime/c_addsub_0_stub.vhdl:5' bound to instance 'add1' of component 'c_addsub_0' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/convo.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/realtime/c_addsub_0_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'convo' (5#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/convo.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'fifo' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/fifo.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'fifo' (6#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/fifo.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'fifo_parallel' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/fifo_parallel.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'bram__parameterized2' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/bram.vhd:23]
 	Parameter WIDTH bound to: 16 - type: integer 
 	Parameter DEPTH bound to: 9 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bram__parameterized2' (6#1) [/home/wen/Documents/CNN_SoC/src_parallel/bram.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'fifo_parallel' (7#1) [/home/wen/Documents/CNN_SoC/src_parallel/fifo_parallel.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'cnn_top' (8#1) [/home/wen/Documents/CNN_SoC/src_parallel/cnn_top.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'bram__parameterized2' (6#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/bram.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'fifo_parallel' (7#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/fifo_parallel.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'cnn_top' (8#1) [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/cnn_top.vhd:45]
 WARNING: [Synth 8-3331] design router has unconnected port initialValue[31]
 WARNING: [Synth 8-3331] design router has unconnected port initialValue[30]
 WARNING: [Synth 8-3331] design router has unconnected port initialValue[29]
@@ -98,8 +98,24 @@ WARNING: [Synth 8-3331] design router has unconnected port size_dataOut[3]
 WARNING: [Synth 8-3331] design router has unconnected port size_dataOut[2]
 WARNING: [Synth 8-3331] design router has unconnected port size_dataOut[1]
 WARNING: [Synth 8-3331] design router has unconnected port size_dataOut[0]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[15]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[14]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[13]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[12]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[11]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[10]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[9]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[8]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[7]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[6]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[5]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[4]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[3]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[2]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[1]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1110.734 ; gain = 178.555 ; free physical = 598 ; free virtual = 18883
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 332.406 ; gain = 122.586
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -109,112 +125,112 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1110.734 ; gain = 178.555 ; free physical = 598 ; free virtual = 18883
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 332.406 ; gain = 122.586
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'c_addsub_0' instantiated as 'para[0].datapath[0].convolution/add1'. 20 instances of this cell are unresolved black boxes. [/home/wen/Documents/CNN_SoC/src_parallel/convo.vhd:110]
-WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'mult_gen_0' instantiated as 'para[0].datapath[0].convolution/m1'. 20 instances of this cell are unresolved black boxes. [/home/wen/Documents/CNN_SoC/src_parallel/convo.vhd:94]
-WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'mult_gen_1' instantiated as 'm2'. 3 instances of this cell are unresolved black boxes. [/home/wen/Documents/CNN_SoC/src_parallel/cnn_top.vhd:112]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'c_addsub_0' instantiated as 'para[0].datapath[0].convolution/add1'. 20 instances of this cell are unresolved black boxes. [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/convo.vhd:110]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'mult_gen_0' instantiated as 'para[0].datapath[0].convolution/m1'. 20 instances of this cell are unresolved black boxes. [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/convo.vhd:94]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'mult_gen_1' instantiated as 'm2'. 3 instances of this cell are unresolved black boxes. [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/cnn_top.vhd:112]
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp/mult_gen_1_in_context.xdc] for cell 'm2'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp/mult_gen_1_in_context.xdc] for cell 'm2'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp/mult_gen_1_in_context.xdc] for cell 'm3'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp/mult_gen_1_in_context.xdc] for cell 'm3'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp/mult_gen_1_in_context.xdc] for cell 'm4'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp/mult_gen_1_in_context.xdc] for cell 'm4'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[0].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[0].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[0].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[0].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[1].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[1].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[1].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[1].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[2].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[2].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[2].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[2].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[3].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[3].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[3].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[3].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[4].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[4].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[4].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[4].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[5].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[5].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[5].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[5].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[6].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[6].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[6].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[6].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[7].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[7].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[7].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[7].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[8].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[8].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[8].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[8].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[9].datapath[0].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[9].datapath[0].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[9].datapath[1].convolution/add1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[9].datapath[1].convolution/add1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[0].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[0].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[0].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[0].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[1].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[1].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[1].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[1].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[2].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[2].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[2].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[2].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[3].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[3].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[3].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[3].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[4].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[4].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[4].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[4].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[5].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[5].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[5].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[5].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[6].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[6].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[6].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[6].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[7].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[7].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[7].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[7].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[8].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[8].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[8].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[8].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[9].datapath[0].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[9].datapath[0].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[9].datapath[1].convolution/m1'
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-4455-wen-work/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[9].datapath[1].convolution/m1'
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.srcs/constrs_1/new/clock1.xdc]
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.srcs/constrs_1/new/clock1.xdc]
-Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp/mult_gen_1_in_context.xdc] for cell 'm2'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp/mult_gen_1_in_context.xdc] for cell 'm2'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp/mult_gen_1_in_context.xdc] for cell 'm3'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp/mult_gen_1_in_context.xdc] for cell 'm3'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp/mult_gen_1_in_context.xdc] for cell 'm4'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp/mult_gen_1_in_context.xdc] for cell 'm4'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[0].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[0].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[0].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[0].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[1].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[1].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[1].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[1].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[2].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[2].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[2].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[2].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[3].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[3].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[3].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[3].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[4].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[4].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[4].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[4].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[5].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[5].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[5].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[5].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[6].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[6].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[6].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[6].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[7].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[7].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[7].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[7].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[8].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[8].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[8].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[8].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[9].datapath[0].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[9].datapath[0].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[9].datapath[1].convolution/add1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_2/c_addsub_0_in_context.xdc] for cell 'para[9].datapath[1].convolution/add1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[0].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[0].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[0].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[0].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[1].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[1].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[1].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[1].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[2].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[2].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[2].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[2].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[3].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[3].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[3].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[3].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[4].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[4].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[4].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[4].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[5].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[5].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[5].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[5].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[6].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[6].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[6].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[6].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[7].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[7].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[7].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[7].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[8].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[8].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[8].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[8].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[9].datapath[0].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[9].datapath[0].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[9].datapath[1].convolution/m1'
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/.Xil/Vivado-13464-DESKTOP-1Q958FF/dcp_3/mult_gen_0_in_context.xdc] for cell 'para[9].datapath[1].convolution/m1'
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/constrs_1/new/clock1.xdc]
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/constrs_1/new/clock1.xdc]
+Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1463.953 ; gain = 3.000 ; free physical = 397 ; free virtual = 18682
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.323 . Memory (MB): peak = 655.785 ; gain = 0.949
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'm2' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'm3' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'm4' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
@@ -239,14 +255,14 @@ WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context 
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'para[9].datapath[0].convolution/m1' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'para[9].datapath[1].convolution/m1' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1463.953 ; gain = 531.773 ; free physical = 385 ; free virtual = 18680
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 657.012 ; gain = 447.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1463.953 ; gain = 531.773 ; free physical = 385 ; free virtual = 18680
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 657.012 ; gain = 447.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -292,7 +308,7 @@ Applied set_property DONT_TOUCH = true for \para[9].datapath[0].convolution /m1.
 Applied set_property DONT_TOUCH = true for \para[9].datapath[1].convolution /add1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for \para[9].datapath[1].convolution /m1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1463.953 ; gain = 531.773 ; free physical = 385 ; free virtual = 18679
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 657.012 ; gain = 447.191
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "counter_kernel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nextOutputPixel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -300,12 +316,12 @@ INFO: [Synth 8-5544] ROM "endLayer" won't be mapped to Block RAM because address
 INFO: [Synth 8-5544] ROM "fsm" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "previous_fsm" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "all_full_q" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:178]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:178]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:178]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:178]
 INFO: [Synth 8-5546] ROM "writeWeight_array" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "writeWeight_array" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1463.953 ; gain = 531.773 ; free physical = 394 ; free virtual = 18679
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 657.012 ; gain = 447.191
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -353,9 +369,10 @@ Detailed RTL Component Info :
 	   5 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 40    
-	   2 Input      1 Bit        Muxes := 538   
+	   2 Input      1 Bit        Muxes := 537   
 	   3 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 12    
+	   6 Input      1 Bit        Muxes := 1     
 	  10 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -390,9 +407,10 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 2     
 	   5 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 15    
 	   3 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 12    
+	   6 Input      1 Bit        Muxes := 1     
 Module fifo 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -621,104 +639,101 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:212]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:131]
-INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:155]
-INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:154]
-INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [/home/wen/Documents/CNN_SoC/src_parallel/router.vhd:156]
-DSP Report: Generating DSP counter_kernel2, operation Mode is: (C:0xffffffffffff)+A*B.
-DSP Report: operator counter_kernel2 is absorbed into DSP counter_kernel2.
-DSP Report: operator counter_kernel3 is absorbed into DSP counter_kernel2.
+INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/NextOutputPixel_q_reg' into 'para[0].datapath[0].router/NextOutputPixel_q_reg' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:212]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/dataIn_q_reg[16:0]' into 'para[0].datapath[0].router/dataIn_q_reg[16:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:131]
+INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/multiplication_time_1_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_1_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:155]
+INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/multiplication_time_reg[31:0]' into 'para[0].datapath[0].router/multiplication_time_reg[31:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:154]
+INFO: [Synth 8-4471] merging register 'para[0].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[1].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[2].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[3].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[4].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[5].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[6].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[7].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[8].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[0].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
+INFO: [Synth 8-4471] merging register 'para[9].datapath[1].router/addition_time_reg[11:0]' into 'para[0].datapath[0].router/addition_time_reg[11:0]' [C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd:156]
 DSP Report: Generating DSP para[0].datapath[0].router/multiplication_time_reg, operation Mode is: (C+A*B)'.
 DSP Report: register para[0].datapath[0].router/multiplication_time_reg is absorbed into DSP para[0].datapath[0].router/multiplication_time_reg.
 DSP Report: operator para[0].datapath[0].router/multiplication_time0 is absorbed into DSP para[0].datapath[0].router/multiplication_time_reg.
@@ -728,6 +743,22 @@ DSP Report: register para[0].datapath[0].router/addition_time_reg is absorbed in
 DSP Report: register para[0].datapath[0].router/multiplication_time_1_reg is absorbed into DSP para[0].datapath[0].router/addition_time_reg.
 DSP Report: operator para[0].datapath[0].router/addition_time0 is absorbed into DSP para[0].datapath[0].router/addition_time_reg.
 DSP Report: operator para[0].datapath[0].router/multiplication_time_10 is absorbed into DSP para[0].datapath[0].router/addition_time_reg.
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[15]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[14]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[13]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[12]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[11]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[10]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[9]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[8]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[7]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[6]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[5]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[4]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[3]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[2]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[1]
+WARNING: [Synth 8-3331] design controller has unconnected port sizeOutput[0]
 WARNING: [Synth 8-3332] Sequential element (mem_int_reg[3][31]) is unused and will be removed from module fifo.
 WARNING: [Synth 8-3332] Sequential element (mem_int_reg[3][30]) is unused and will be removed from module fifo.
 WARNING: [Synth 8-3332] Sequential element (mem_int_reg[3][29]) is unused and will be removed from module fifo.
@@ -792,8 +823,9 @@ WARNING: [Synth 8-3332] Sequential element (mem_int_reg[0][19]) is unused and wi
 WARNING: [Synth 8-3332] Sequential element (mem_int_reg[0][18]) is unused and will be removed from module fifo.
 WARNING: [Synth 8-3332] Sequential element (mem_int_reg[0][17]) is unused and will be removed from module fifo.
 WARNING: [Synth 8-3332] Sequential element (mem_int_reg[0][16]) is unused and will be removed from module fifo.
+WARNING: [Synth 8-3332] Sequential element (counter_output_reg[0]) is unused and will be removed from module controller.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1463.953 ; gain = 531.773 ; free physical = 341 ; free virtual = 18617
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:40 . Memory (MB): peak = 657.012 ; gain = 447.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -906,13 +938,12 @@ Distributed RAM: Preliminary Mapping  Report (see note below)
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|controller  | (C:0xffffffffffff)+A*B | 17     | 17     | 1      | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|router      | (C+A*B)'               | 17     | 17     | 17     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
-|router      | (C-(A*B)')'            | 12     | 12     | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 1    | 1    | 
-+------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|router      | (C+A*B)'    | 17     | 17     | 17     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|router      | (C-(A*B)')' | 12     | 12     | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 1    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -931,10 +962,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1488.938 ; gain = 556.758 ; free physical = 258 ; free virtual = 18534
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:57 . Memory (MB): peak = 695.957 ; gain = 486.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1651.391 ; gain = 719.211 ; free physical = 182 ; free virtual = 18343
+Finished Timing Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:02:10 . Memory (MB): peak = 854.730 ; gain = 644.910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1142,7 +1173,7 @@ INFO: [Synth 8-4480] The timing for the instance para[7].datapath[0].router/BRAM
 INFO: [Synth 8-4480] The timing for the instance para[7].datapath[0].router/BRAM_weight/RAM_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1678.773 ; gain = 746.594 ; free physical = 183 ; free virtual = 18324
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:02:18 . Memory (MB): peak = 886.184 ; gain = 676.363
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1166,7 +1197,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1678.773 ; gain = 746.594 ; free physical = 183 ; free virtual = 18324
+Finished IO Insertion : Time (s): cpu = 00:01:58 ; elapsed = 00:02:20 . Memory (MB): peak = 886.184 ; gain = 676.363
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1179,7 +1210,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1678.773 ; gain = 746.594 ; free physical = 183 ; free virtual = 18324
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:58 ; elapsed = 00:02:20 . Memory (MB): peak = 886.184 ; gain = 676.363
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1191,25 +1222,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1678.773 ; gain = 746.594 ; free physical = 183 ; free virtual = 18323
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:00 ; elapsed = 00:02:22 . Memory (MB): peak = 886.184 ; gain = 676.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1678.773 ; gain = 746.594 ; free physical = 183 ; free virtual = 18323
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:00 ; elapsed = 00:02:22 . Memory (MB): peak = 886.184 ; gain = 676.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1678.773 ; gain = 746.594 ; free physical = 183 ; free virtual = 18323
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:00 ; elapsed = 00:02:22 . Memory (MB): peak = 886.184 ; gain = 676.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1678.773 ; gain = 746.594 ; free physical = 183 ; free virtual = 18323
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:00 ; elapsed = 00:02:22 . Memory (MB): peak = 886.184 ; gain = 676.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1289,33 +1320,32 @@ Report Cell Usage:
 |45    |CARRY4              |   791|
 |46    |DSP48E1             |     1|
 |47    |DSP48E1_1           |     1|
-|48    |DSP48E1_2           |     1|
-|49    |LUT1                |  1501|
-|50    |LUT2                |  1554|
-|51    |LUT3                |  1952|
-|52    |LUT4                |  1457|
-|53    |LUT5                |   972|
-|54    |LUT6                |  1262|
-|55    |RAM32M              |    30|
-|56    |RAMB18E1            |    10|
-|57    |RAMB36E1            |   120|
-|58    |SRL16E              |     1|
-|59    |FDCE                |  5001|
-|60    |FDPE                |   355|
-|61    |FDRE                |   713|
-|62    |IBUF                |   135|
-|63    |OBUF                |    17|
+|48    |LUT1                |  1501|
+|49    |LUT2                |  1570|
+|50    |LUT3                |  1950|
+|51    |LUT4                |  1426|
+|52    |LUT5                |   972|
+|53    |LUT6                |  1262|
+|54    |RAM32M              |    30|
+|55    |RAMB18E1            |    10|
+|56    |RAMB36E1            |   120|
+|57    |SRL16E              |     1|
+|58    |FDCE                |  4999|
+|59    |FDPE                |   356|
+|60    |FDRE                |   713|
+|61    |IBUF                |   135|
+|62    |OBUF                |    17|
 +------+--------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------------+-------------------------+------+
 |      |Instance                            |Module                   |Cells |
 +------+------------------------------------+-------------------------+------+
-|1     |top                                 |                         | 16883|
-|2     |  controller                        |controller               |  1470|
+|1     |top                                 |                         | 16864|
+|2     |  controller                        |controller               |  1450|
 |3     |  \para[0].datapath[0].convolution  |convo__xdcDup__1         |   167|
-|4     |  \para[0].datapath[0].router       |router                   |   704|
-|5     |    BRAM_1_data                     |bram_119                 |     4|
+|4     |  \para[0].datapath[0].router       |router                   |   705|
+|5     |    BRAM_1_data                     |bram_119                 |     5|
 |6     |    BRAM_2_data                     |bram_120                 |    19|
 |7     |    BRAM_bias                       |bram__parameterized1_121 |    16|
 |8     |    BRAM_weight                     |bram__parameterized0_122 |     2|
@@ -1465,13 +1495,13 @@ Report Instance Areas:
 |152   |  \para[9].pooling                  |fifo_36                  |   309|
 +------+------------------------------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1678.773 ; gain = 746.594 ; free physical = 183 ; free virtual = 18323
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:00 ; elapsed = 00:02:23 . Memory (MB): peak = 886.184 ; gain = 676.363
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 64 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1678.773 ; gain = 313.285 ; free physical = 183 ; free virtual = 18323
-Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1678.781 ; gain = 746.602 ; free physical = 183 ; free virtual = 18323
+Synthesis finished with 0 errors, 0 critical warnings and 81 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:34 ; elapsed = 00:01:56 . Memory (MB): peak = 886.184 ; gain = 340.289
+Synthesis Optimization Complete : Time (s): cpu = 00:02:01 ; elapsed = 00:02:23 . Memory (MB): peak = 886.184 ; gain = 676.363
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1089 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1088 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1480,9 +1510,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 30 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-352 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+352 Infos, 161 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1710.789 ; gain = 711.105 ; free physical = 183 ; free virtual = 18324
-INFO: [Common 17-1381] The checkpoint '/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/synth_1/cnn_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1734.801 ; gain = 0.000 ; free physical = 177 ; free virtual = 18321
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 16 20:21:30 2017...
+synth_design: Time (s): cpu = 00:02:02 ; elapsed = 00:02:20 . Memory (MB): peak = 886.184 ; gain = 670.918
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/synth_1/cnn_top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 886.184 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 17:52:52 2017...

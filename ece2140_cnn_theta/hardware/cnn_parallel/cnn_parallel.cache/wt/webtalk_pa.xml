@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Apr 18 17:34:35 2017">
+<application name="pa" timeStamp="Tue Apr 18 17:53:52 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="fa00cc43f44a45d1be045c806de3ecef" type="ProjectID"/>
-<property name="ProjectIteration" value="4" type="ProjectIteration"/>
+<property name="ProjectIteration" value="5" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -34,12 +34,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="RecustomizeCore" value="13" type="JavaHandler"/>
 <property name="ReportClockNetworks" value="1" type="JavaHandler"/>
 <property name="ReportTimingSummary" value="12" type="JavaHandler"/>
-<property name="RunImplementation" value="6" type="JavaHandler"/>
-<property name="RunSynthesis" value="8" type="JavaHandler"/>
+<property name="RunImplementation" value="7" type="JavaHandler"/>
+<property name="RunSynthesis" value="10" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
 <property name="ShowPropertyEditor" value="1" type="JavaHandler"/>
 <property name="ShowView" value="16" type="JavaHandler"/>
-<property name="SimulationRun" value="59" type="JavaHandler"/>
+<property name="SimulationRun" value="60" type="JavaHandler"/>
 <property name="TimingConstraintsWizard" value="1" type="JavaHandler"/>
 <property name="ViewTaskImplementation" value="2" type="JavaHandler"/>
 <property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
@@ -50,14 +50,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AbstractFileView_RELOAD" value="4" type="GuiResourceData"/>
 <property name="AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES" value="1" type="GuiResourceData"/>
 <property name="AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES" value="1" type="GuiResourceData"/>
-<property name="BaseDialog_CANCEL" value="14" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="57" type="GuiResourceData"/>
-<property name="BaseDialog_YES" value="1" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="15" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="62" type="GuiResourceData"/>
+<property name="BaseDialog_YES" value="2" type="GuiResourceData"/>
 <property name="ClockCreationPanel_CLOCK_NAME" value="1" type="GuiResourceData"/>
 <property name="ClockCreationPanel_ENTER_POSITIVE_NUMBER" value="5" type="GuiResourceData"/>
 <property name="ClosePlanner_YES" value="2" type="GuiResourceData"/>
 <property name="CmdMsgDialog_MESSAGES" value="3" type="GuiResourceData"/>
-<property name="CmdMsgDialog_OK" value="5" type="GuiResourceData"/>
+<property name="CmdMsgDialog_OK" value="6" type="GuiResourceData"/>
 <property name="CmdMsgDialog_OPEN_MESSAGES_VIEW" value="5" type="GuiResourceData"/>
 <property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="121" type="GuiResourceData"/>
 <property name="CoreTreeTablePanel_CORE_TREE_TABLE" value="22" type="GuiResourceData"/>
@@ -69,8 +69,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE" value="8" type="GuiResourceData"/>
 <property name="EditXdcSelectableTablePanel_REMOVE_CONSTRAINT" value="1" type="GuiResourceData"/>
 <property name="ExpReportTreePanel_EXP_REPORT_TREE_TABLE" value="2" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="193" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="110" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="203" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="113" type="GuiResourceData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_FIT" value="61" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_IN" value="64" type="GuiResourceData"/>
@@ -88,6 +88,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="MainMenuMgr_WINDOW" value="6" type="GuiResourceData"/>
 <property name="MainWinMenuMgr_LAYOUT" value="2" type="GuiResourceData"/>
 <property name="MessageBanner_SEE_LIST_OF_WARNING_MESSAGES" value="3" type="GuiResourceData"/>
+<property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="1" type="GuiResourceData"/>
 <property name="ModifiedConstraintsWithoutTargetDialog_UPDATE" value="1" type="GuiResourceData"/>
 <property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="26" type="GuiResourceData"/>
 <property name="MsgView_INFORMATION_MESSAGES" value="2" type="GuiResourceData"/>
@@ -104,7 +105,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_REPORTS_WINDOW" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_RUN_IMPLEMENTATION" value="2" type="GuiResourceData"/>
 <property name="PACommandNames_SIMULATION_RUN" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="59" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="60" type="GuiResourceData"/>
 <property name="PACommandNames_ZOOM_OUT" value="7" type="GuiResourceData"/>
 <property name="PAViews_CODE" value="11" type="GuiResourceData"/>
 <property name="PAViews_DEVICE" value="9" type="GuiResourceData"/>
@@ -156,11 +157,6 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="331" type="GuiResourceData"/>
 <property name="XPG_TabbedPane_TABBED_PANE" value="1" type="GuiResourceData"/>
 <property name="XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS" value="2" type="GuiResourceData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="20" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="18" type="TclMode"/>
 </item>
 </section>
 </application>

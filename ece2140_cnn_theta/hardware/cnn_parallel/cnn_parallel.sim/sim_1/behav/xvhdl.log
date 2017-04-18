@@ -1,26 +1,26 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.srcs/sources_1/new/fullyconnected.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/new/fullyconnected.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity fullyconnected
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/src_parallel/bram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/bram.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity bram
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.srcs/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity c_addsub_0
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mult_gen_0
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_1_1/sim/mult_gen_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.srcs/sources_1/ip/mult_gen_1_1/sim/mult_gen_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mult_gen_1
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/src_parallel/fifo_parallel.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/fifo_parallel.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity fifo_parallel
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/src_parallel/fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/fifo.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity fifo
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/src_parallel/convo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/convo.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity convo
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/src_parallel/controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/controller.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity controller
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/src_parallel/cnn_pkg.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/src_parallel/router.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/cnn_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/router.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity router
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/src_parallel/cnn_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/src_parallel/cnn_top.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity cnn_top
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/sim/txt_util.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/wen/Documents/CNN_SoC/sim/test_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/sim/txt_util.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/sim/test_top.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity test_top

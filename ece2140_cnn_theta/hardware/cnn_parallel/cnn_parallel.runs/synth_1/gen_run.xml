@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1492388424">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1492552204">
+  <File Type="RDS-PROPCONSTRS" Name="cnn_top_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="cnn_top.tcl"/>
   <File Type="RDS-RDS" Name="cnn_top.vds"/>
+  <File Type="RDS-UTIL" Name="cnn_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cnn_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="cnn_top.dcp"/>
   <File Type="VDS-TIMINGSUMMARY" Name="cnn_top_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="cnn_top_timing_summary_synth.pb"/>
-  <File Type="RDS-DCP" Name="cnn_top.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="cnn_top_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="cnn_top_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="cnn_top_drc_synth.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/fullyconnected.vhd">
@@ -77,6 +77,9 @@
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../component.xml">
+      <FileInfo SFType="IPXACT"/>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>

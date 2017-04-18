@@ -27,8 +27,8 @@ architecture behavioral of test_top is
 	signal writeBias: std_logic;
 	signal biasIn: STD_LOGIC_VECTOR(15 downto 0);
 
-	file out_conv: text open write_mode is "/home/wen/Documents/CNN_SoC/output_file/out_conv.txt";
-	file out_pool: text open write_mode is "/home/wen/Documents/CNN_SoC/output_file/out_pool.txt";	
+	file out_conv: text open write_mode is "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/output_file/out_conv.txt";
+	file out_pool: text open write_mode is "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/output_file/out_pool.txt";	
 
 	--FIXME
 	--data from the FIFO at the end of the PE
@@ -194,7 +194,7 @@ architecture behavioral of test_top is
         features_Out <= std_logic_vector(to_unsigned(16, 16));
         size_Input <= std_logic_vector(to_unsigned(14, 16));
 		wait for 10 ns;
-		file_open(input_file, "/home/wen/Documents/CNN_SoC/input_file/first_convolution_in.txt", READ_MODE);
+		file_open(input_file, "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/input_file/first_convolution_in.txt", READ_MODE);
 		while not endfile(input_file) loop 
 			wait for 10 ns;
 			readline(input_file, rdata);
@@ -206,7 +206,7 @@ architecture behavioral of test_top is
 		valid <= '0';
 		file_close(input_file);
 		wait for 10 ns;
-		file_open(input_file, "/home/wen/Documents/CNN_SoC/input_file/first_convolution_weight.txt", READ_MODE);
+		file_open(input_file, "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/input_file/first_convolution_weight.txt", READ_MODE);
 		while not endfile(input_file) loop 
 			wait for 10 ns;
 			readline(input_file, rdata);
@@ -218,7 +218,7 @@ architecture behavioral of test_top is
 		writeWeight <= '0';
 		file_close(input_file);
 		wait for 10 ns;
-		file_open(input_file, "/home/wen/Documents/CNN_SoC/input_file/first_convolution_bias.txt", READ_MODE);
+		file_open(input_file, "C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/input_file/first_convolution_bias.txt", READ_MODE);
 		while not endfile(input_file) loop 
 			wait for 10 ns;
 			readline(input_file, rdata);

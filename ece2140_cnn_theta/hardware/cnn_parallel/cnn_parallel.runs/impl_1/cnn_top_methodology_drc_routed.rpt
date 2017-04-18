@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Sun Apr 16 20:24:50 2017
-| Host         : wen-work running 64-bit Ubuntu 16.04.2 LTS
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue Apr 18 17:59:12 2017
+| Host         : DESKTOP-1Q958FF running 64-bit major release  (build 9200)
 | Command      : report_methodology -file cnn_top_methodology_drc_routed.rpt -rpx cnn_top_methodology_drc_routed.rpx
 | Design       : cnn_top
 | Device       : xc7k70tfbv676-1
@@ -20,16 +20,15 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_cnn_top
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 284
+             Violations found: 283
 +-----------+----------+--------------------------------------------+------------+
 | Rule      | Severity | Description                                | Violations |
 +-----------+----------+--------------------------------------------+------------+
 | SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 130        |
 | SYNTH-12  | Warning  | DSP input not registered                   | 2          |
-| SYNTH-13  | Warning  | combinational multiplier                   | 1          |
 | TIMING-18 | Warning  | Missing input or output delay              | 151        |
 +-----------+----------+--------------------------------------------+------------+
 
@@ -693,11 +692,6 @@ Related violations: <none>
 SYNTH-12#2 Warning
 DSP input not registered  
 DSP instance para[0].datapath[0].router/multiplication_time_reg is not fully pipelined on the input side. AREG/BREG/CREG/DREG are not used.
-Related violations: <none>
-
-SYNTH-13#1 Warning
-combinational multiplier  
-Detected combinational multiplier in DSP instance controller/counter_kernel2.
 Related violations: <none>
 
 TIMING-18#1 Warning

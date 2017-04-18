@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2016.4 (64-bit)
-# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sun Apr 16 19:08:16 2017
-# Process ID: 26428
-# Current directory: /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/mult_gen_1_synth_1
-# Command line: vivado -log mult_gen_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_gen_1.tcl
-# Log file: /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/mult_gen_1_synth_1/mult_gen_1.vds
-# Journal file: /home/wen/Documents/CNN_SoC/cnn_parallel/cnn_parallel.runs/mult_gen_1_synth_1/vivado.jou
+# Start of session at: Tue Apr 18 17:50:09 2017
+# Process ID: 16256
+# Current directory: C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/mult_gen_1_synth_1
+# Command line: vivado.exe -log mult_gen_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_gen_1.tcl
+# Log file: C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/mult_gen_1_synth_1/mult_gen_1.vds
+# Journal file: C:/Users/Darius/Desktop/ECE2140/ece2140/ece2140_cnn_theta/hardware/cnn_parallel/cnn_parallel.runs/mult_gen_1_synth_1\vivado.jou
 #-----------------------------------------------------------
 source mult_gen_1.tcl -notrace
