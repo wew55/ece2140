@@ -18,4 +18,4 @@
 
 * Change the following exponential input files paths in line 48 in bram.vhd to: $PROJECT_ROOT_DIR/ece2140/ece2140_cnn_theta/hardware/cnn_fullyconnected/exponential_input.txt
 
-* Run simulation in vivado, and type "restart" then "run all" (required to run very long time) in Tcl cmd line window.
+* Run simulation in vivado, and type "restart" then "run all" (required to run very long time) in Tcl cmd line console.
