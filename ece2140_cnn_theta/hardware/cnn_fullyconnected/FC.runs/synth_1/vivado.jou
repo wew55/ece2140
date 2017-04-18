@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Apr 18 17:33:16 2017
+# Process ID: 8904
+# Current directory: C:/Users/Darius/FC/FC.runs/synth_1
+# Command line: vivado.exe -log fullyconnected.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fullyconnected.tcl
+# Log file: C:/Users/Darius/FC/FC.runs/synth_1/fullyconnected.vds
+# Journal file: C:/Users/Darius/FC/FC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fullyconnected.tcl -notrace
