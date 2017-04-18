@@ -10,7 +10,7 @@ The package includes hardware implementation in VHDL, software model in C and sc
 
 # Team
 
-CNN-theta
+CNN-theta:
 
 Thibaut Lanois: THL26@pitt.edu
 
