@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="test_top" />
+            <top_module name="txt_util" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1500100000fs"></ZoomStartTime>
+      <ZoomEndTime time="1657693124fs"></ZoomEndTime>
+      <Cursor1Time time="1555016000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/test_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/B" type="logic">
+      <obj_property name="ElementShortName">B</obj_property>
+      <obj_property name="ObjectShortName">B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/softmax_output" type="array">
+      <obj_property name="ElementShortName">softmax_output[127:0]</obj_property>
+      <obj_property name="ObjectShortName">softmax_output[127:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">63</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/A" type="logic">
+      <obj_property name="ElementShortName">A</obj_property>
+      <obj_property name="ObjectShortName">A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/output" type="array">
+      <obj_property name="ElementShortName">output[15:0]</obj_property>
+      <obj_property name="ObjectShortName">output[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">14</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/valid_out" type="logic">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/last_input" type="logic">
+      <obj_property name="ElementShortName">last_input</obj_property>
+      <obj_property name="ObjectShortName">last_input</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/valid_in" type="logic">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/valid_a" type="logic">
+      <obj_property name="ElementShortName">valid_a</obj_property>
+      <obj_property name="ObjectShortName">valid_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/valid_b" type="logic">
+      <obj_property name="ElementShortName">valid_b</obj_property>
+      <obj_property name="ObjectShortName">valid_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/valid_c" type="logic">
+      <obj_property name="ElementShortName">valid_c</obj_property>
+      <obj_property name="ObjectShortName">valid_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/valid_d" type="logic">
+      <obj_property name="ElementShortName">valid_d</obj_property>
+      <obj_property name="ObjectShortName">valid_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/last_a" type="logic">
+      <obj_property name="ElementShortName">last_a</obj_property>
+      <obj_property name="ObjectShortName">last_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/last_b" type="logic">
+      <obj_property name="ElementShortName">last_b</obj_property>
+      <obj_property name="ObjectShortName">last_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/last_c" type="logic">
+      <obj_property name="ElementShortName">last_c</obj_property>
+      <obj_property name="ObjectShortName">last_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/last_d" type="logic">
+      <obj_property name="ElementShortName">last_d</obj_property>
+      <obj_property name="ObjectShortName">last_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/final_output" type="array">
+      <obj_property name="ElementShortName">final_output[63:0]</obj_property>
+      <obj_property name="ObjectShortName">final_output[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/div_top" type="array">
+      <obj_property name="ElementShortName">div_top[63:0]</obj_property>
+      <obj_property name="ObjectShortName">div_top[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/div_bottom" type="array">
+      <obj_property name="ElementShortName">div_bottom[63:0]</obj_property>
+      <obj_property name="ObjectShortName">div_bottom[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/temp_output_exp" type="array">
+      <obj_property name="ElementShortName">temp_output_exp[63:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_output_exp[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/total_output" type="array">
+      <obj_property name="ElementShortName">total_output[63:0]</obj_property>
+      <obj_property name="ObjectShortName">total_output[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/temp_total_output" type="array">
+      <obj_property name="ElementShortName">temp_total_output[63:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_total_output[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/input" type="array">
+      <obj_property name="ElementShortName">input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/shift_addr" type="array">
+      <obj_property name="ElementShortName">shift_addr[15:7]</obj_property>
+      <obj_property name="ObjectShortName">shift_addr[15:7]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">4</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/exp_data_out" type="array">
+      <obj_property name="ElementShortName">exp_data_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">exp_data_out[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/store_in_addr" type="array">
+      <obj_property name="ElementShortName">store_in_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">store_in_addr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/store_shift_addr" type="array">
+      <obj_property name="ElementShortName">store_shift_addr[15:10]</obj_property>
+      <obj_property name="ObjectShortName">store_shift_addr[15:10]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_top/fullyconnected/store_data_out" type="array">
+      <obj_property name="ElementShortName">store_data_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">store_data_out[63:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">11</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+</wave_config>
