@@ -555,3 +555,10 @@ INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Command: report_power -file cnn_top_power_routed.rpt -pb cnn_top_power_summary_routed.pb -rpx cnn_top_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+95 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1369.875 ; gain = 14.313
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 17:59:23 2017...
