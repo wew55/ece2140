@@ -1,0 +1,2 @@
+* Modified from the Caffe Examples to implement and train LeNet-5.
+* Directly put .prototext in $CAFFE_ROOT/examples/mnist to run it.
