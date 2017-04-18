@@ -26,7 +26,7 @@ architecture behavioral of test_top is
 	signal weightIn: STD_LOGIC_VECTOR(15 downto 0);
 	signal writeBias: std_logic;
 	signal biasIn: STD_LOGIC_VECTOR(15 downto 0);
-
+	--Change the following output files paths (2 lines below) to: $PROJECT_ROOT_DIR/ece2140/ece2140_cnn_theta/hardware/cnn_final/output_file
 	file out_conv: text open write_mode is "/home/wen/Documents/CNN_SoC/output_file/out_conv.txt";
 	file out_pool: text open write_mode is "/home/wen/Documents/CNN_SoC/output_file/out_pool.txt";	
 
@@ -194,6 +194,7 @@ architecture behavioral of test_top is
         features_Out <= std_logic_vector(to_unsigned(16, 16));
         size_Input <= std_logic_vector(to_unsigned(14, 16));
 		wait for 10 ns;
+	--Change the following input files path to: $PROJECT_ROOT_DIR/ece2140/ece2140_cnn_theta/hardware/cnn_final/input_file
 		file_open(input_file, "/home/wen/Documents/CNN_SoC/input_file/first_convolution_in.txt", READ_MODE);
 		while not endfile(input_file) loop 
 			wait for 10 ns;
@@ -206,6 +207,7 @@ architecture behavioral of test_top is
 		valid <= '0';
 		file_close(input_file);
 		wait for 10 ns;
+	--Change the following input files path to: $PROJECT_ROOT_DIR/ece2140/ece2140_cnn_theta/hardware/cnn_final/input_file
 		file_open(input_file, "/home/wen/Documents/CNN_SoC/input_file/first_convolution_weight.txt", READ_MODE);
 		while not endfile(input_file) loop 
 			wait for 10 ns;
@@ -218,6 +220,7 @@ architecture behavioral of test_top is
 		writeWeight <= '0';
 		file_close(input_file);
 		wait for 10 ns;
+	--Change the following input files path to: $PROJECT_ROOT_DIR/ece2140/ece2140_cnn_theta/hardware/cnn_final/input_file
 		file_open(input_file, "/home/wen/Documents/CNN_SoC/input_file/first_convolution_bias.txt", READ_MODE);
 		while not endfile(input_file) loop 
 			wait for 10 ns;
