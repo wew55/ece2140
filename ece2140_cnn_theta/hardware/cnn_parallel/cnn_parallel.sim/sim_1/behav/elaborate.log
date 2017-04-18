@@ -1,0 +1,67 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /home/wen/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 4777fc83450a44a581cb15fcc119cff4 --debug typical --relax --mt 8 -L xil_defaultlib -L xbip_utils_v3_0_7 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L secureip -L xpm --snapshot test_top_behav xil_defaultlib.test_top -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.cnn_pkg
+Compiling package xil_defaultlib.txt_util
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_viv_comp
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package mult_gen_v12_0_12.dsp_pkg
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_viv_comp
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package xbip_addsub_v3_0_3.xbip_addsub_v3_0_3_viv_comp
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_3.xbip_dsp48_addsub_v3_0_3_viv_com...
+Compiling package xbip_dsp48_addsub_v3_0_3.xbip_dsp48_addsub_v3_0_3_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture rtl of entity xil_defaultlib.bram [\bram(width=17,depth=12)\]
+Compiling architecture rtl of entity xil_defaultlib.bram [\bram(depth=12)\]
+Compiling architecture rtl of entity xil_defaultlib.bram [\bram(depth=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.router [\router(mod_line=2)\]
+Compiling architecture behavioral of entity xil_defaultlib.fullyconnected [fullyconnected_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ao_width=25)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.dsp [\dsp(c_xdevicefamily="kintex7",c...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12_viv [\mult_gen_v12_0_12_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12 [\mult_gen_v12_0_12(c_xdevicefami...]
+Compiling architecture mult_gen_0_arch of entity xil_defaultlib.mult_gen_0 [mult_gen_0_default]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(acasc...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_3.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_3.xbip_dsp48_addsub_v3_0_3_viv [\xbip_dsp48_addsub_v3_0_3_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_3.xbip_addsub_v3_0_3_viv [\xbip_addsub_v3_0_3_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling architecture rtl of entity xil_defaultlib.convo [convo_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo [fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.bram [\bram(depth=9)\]
+Compiling architecture behavior of entity xil_defaultlib.fifo_parallel [fifo_parallel_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_type=1,bi_type=1,a...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.dsp [\dsp(c_xdevicefamily="kintex7",c...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12_viv [\mult_gen_v12_0_12_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12 [\mult_gen_v12_0_12(c_xdevicefami...]
+Compiling architecture mult_gen_1_arch of entity xil_defaultlib.mult_gen_1 [mult_gen_1_default]
+Compiling architecture behavior of entity xil_defaultlib.controller [controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.cnn_top [cnn_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_top
+Built simulation snapshot test_top_behav

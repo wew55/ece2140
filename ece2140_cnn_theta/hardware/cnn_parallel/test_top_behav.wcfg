@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cnn_pkg" />
+            <top_module name="test_top" />
+            <top_module name="txt_util" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="34520000000fs"></ZoomStartTime>
+      <ZoomEndTime time="108365882353fs"></ZoomEndTime>
+      <Cursor1Time time="70520000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="107" />
+   <wvobject type="logic" fp_name="/test_top/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/cpu_task">
+      <obj_property name="ElementShortName">cpu_task</obj_property>
+      <obj_property name="ObjectShortName">cpu_task</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/kernel_Size">
+      <obj_property name="ElementShortName">kernel_Size[15:0]</obj_property>
+      <obj_property name="ObjectShortName">kernel_Size[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/size_Output">
+      <obj_property name="ElementShortName">size_Output[15:0]</obj_property>
+      <obj_property name="ObjectShortName">size_Output[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/features_In">
+      <obj_property name="ElementShortName">features_In[15:0]</obj_property>
+      <obj_property name="ObjectShortName">features_In[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/features_Out">
+      <obj_property name="ElementShortName">features_Out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">features_Out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/size_Input">
+      <obj_property name="ElementShortName">size_Input[15:0]</obj_property>
+      <obj_property name="ObjectShortName">size_Input[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/writeWeight">
+      <obj_property name="ElementShortName">writeWeight</obj_property>
+      <obj_property name="ObjectShortName">writeWeight</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/weightIn">
+      <obj_property name="ElementShortName">weightIn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">weightIn[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/writeBias">
+      <obj_property name="ElementShortName">writeBias</obj_property>
+      <obj_property name="ObjectShortName">writeBias</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/biasIn">
+      <obj_property name="ElementShortName">biasIn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">biasIn[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/dataIn">
+      <obj_property name="ElementShortName">dataIn[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/controller/nextLayer">
+      <obj_property name="ElementShortName">nextLayer</obj_property>
+      <obj_property name="ObjectShortName">nextLayer</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/controller/nextOutputPixel">
+      <obj_property name="ElementShortName">nextOutputPixel</obj_property>
+      <obj_property name="ObjectShortName">nextOutputPixel</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/controller/nextLine">
+      <obj_property name="ElementShortName">nextLine</obj_property>
+      <obj_property name="ObjectShortName">nextLine</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/controller/nextFeature">
+      <obj_property name="ElementShortName">nextFeature</obj_property>
+      <obj_property name="ObjectShortName">nextFeature</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/valid_out_convolution">
+      <obj_property name="ElementShortName">valid_out_convolution[9:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">valid_out_convolution[9:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/data_Out">
+      <obj_property name="ElementShortName">data_Out[9:0][1:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_Out[9:0][1:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/weight_Out">
+      <obj_property name="ElementShortName">weight_Out[9:0][1:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_Out[9:0][1:0][15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[9]">
+         <obj_property name="ElementShortName">[9][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[8]">
+         <obj_property name="ElementShortName">[8][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[7]">
+         <obj_property name="ElementShortName">[7][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[6]">
+         <obj_property name="ElementShortName">[6][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[5]">
+         <obj_property name="ElementShortName">[5][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[4]">
+         <obj_property name="ElementShortName">[4][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[3]">
+         <obj_property name="ElementShortName">[3][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[2]">
+         <obj_property name="ElementShortName">[2][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[1]">
+         <obj_property name="ElementShortName">[1][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[0]">
+         <obj_property name="ElementShortName">[0][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][1:0][15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">12</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[9]">
+         <obj_property name="ElementShortName">[9][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[8]">
+         <obj_property name="ElementShortName">[8][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[7]">
+         <obj_property name="ElementShortName">[7][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[6]">
+         <obj_property name="ElementShortName">[6][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[5]">
+         <obj_property name="ElementShortName">[5][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[4]">
+         <obj_property name="ElementShortName">[4][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[3]">
+         <obj_property name="ElementShortName">[3][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[2]">
+         <obj_property name="ElementShortName">[2][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[1]">
+         <obj_property name="ElementShortName">[1][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/weight_Out[0]">
+         <obj_property name="ElementShortName">[0][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][1:0][15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/bias_Out">
+      <obj_property name="ElementShortName">bias_Out[9:0][1:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_Out[9:0][1:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/data_valid">
+      <obj_property name="ElementShortName">data_valid[9:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_valid[9:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/writeBias_array">
+      <obj_property name="ElementShortName">writeBias_array[9:0]</obj_property>
+      <obj_property name="ObjectShortName">writeBias_array[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/enable">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/output">
+      <obj_property name="ElementShortName">output[15:0]</obj_property>
+      <obj_property name="ObjectShortName">output[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/next_output">
+      <obj_property name="ElementShortName">next_output</obj_property>
+      <obj_property name="ObjectShortName">next_output</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/enable">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/valid_in">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/valid_out">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/sum_out">
+      <obj_property name="ElementShortName">sum_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/sum_in">
+      <obj_property name="ElementShortName">sum_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/temp_sum_in">
+      <obj_property name="ElementShortName">temp_sum_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_sum_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/mult_out">
+      <obj_property name="ElementShortName">mult_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/mult_out_shift">
+      <obj_property name="ElementShortName">mult_out_shift[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_out_shift[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/mult_in_input">
+      <obj_property name="ElementShortName">mult_in_input[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_in_input[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/mult_in_weight">
+      <obj_property name="ElementShortName">mult_in_weight[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_in_weight[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/bias_Out">
+      <obj_property name="ElementShortName">bias_Out[9:0][1:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_Out[9:0][1:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/temp_output">
+      <obj_property name="ElementShortName">temp_output[15:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_output[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution">
+      <obj_property name="ElementShortName">data_out_convolution[9:0][1:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_convolution[9:0][1:0][15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[9]">
+         <obj_property name="ElementShortName">[9][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[8]">
+         <obj_property name="ElementShortName">[8][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[7]">
+         <obj_property name="ElementShortName">[7][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[6]">
+         <obj_property name="ElementShortName">[6][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[5]">
+         <obj_property name="ElementShortName">[5][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[4]">
+         <obj_property name="ElementShortName">[4][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[3]">
+         <obj_property name="ElementShortName">[3][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[2]">
+         <obj_property name="ElementShortName">[2][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][1:0][15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[1]">
+         <obj_property name="ElementShortName">[1][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][1:0][15:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[1][1]">
+            <obj_property name="ElementShortName">[1][15:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">12</obj_property>
+            <obj_property name="radix_otherWidth">0</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[1][0]">
+            <obj_property name="ElementShortName">[0][15:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][15:0]</obj_property>
+            <obj_property name="Radix">REALRADIX</obj_property>
+            <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+            <obj_property name="radix_fractionWidth">12</obj_property>
+            <obj_property name="radix_otherWidth">0</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_top/CNN/data_out_convolution[0]">
+         <obj_property name="ElementShortName">[0][1:0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][1:0][15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/valid_q">
+      <obj_property name="ElementShortName">valid_q</obj_property>
+      <obj_property name="ObjectShortName">valid_q</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/valid_qq">
+      <obj_property name="ElementShortName">valid_qq</obj_property>
+      <obj_property name="ObjectShortName">valid_qq</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/valid_qqq">
+      <obj_property name="ElementShortName">valid_qqq</obj_property>
+      <obj_property name="ObjectShortName">valid_qqq</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/next_output_q">
+      <obj_property name="ElementShortName">next_output_q</obj_property>
+      <obj_property name="ObjectShortName">next_output_q</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/next_output_qq">
+      <obj_property name="ElementShortName">next_output_qq</obj_property>
+      <obj_property name="ObjectShortName">next_output_qq</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/next_output_qqq">
+      <obj_property name="ElementShortName">next_output_qqq</obj_property>
+      <obj_property name="ObjectShortName">next_output_qqq</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/next_output_qqqq">
+      <obj_property name="ElementShortName">next_output_qqqq</obj_property>
+      <obj_property name="ObjectShortName">next_output_qqqq</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/\datapath(0)\/convolution/next_output_qqqqq">
+      <obj_property name="ElementShortName">next_output_qqqqq</obj_property>
+      <obj_property name="ObjectShortName">next_output_qqqqq</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/data_out_pooling">
+      <obj_property name="ElementShortName">data_out_pooling[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_pooling[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/valid_out_pooling">
+      <obj_property name="ElementShortName">valid_out_pooling[9:0]</obj_property>
+      <obj_property name="ObjectShortName">valid_out_pooling[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/read_fifo">
+      <obj_property name="ElementShortName">read_fifo[9:0]</obj_property>
+      <obj_property name="ObjectShortName">read_fifo[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/counter_read_fifo">
+      <obj_property name="ElementShortName">counter_read_fifo</obj_property>
+      <obj_property name="ObjectShortName">counter_read_fifo</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/valid_out_fifo">
+      <obj_property name="ElementShortName">valid_out_fifo[9:0]</obj_property>
+      <obj_property name="ObjectShortName">valid_out_fifo[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/valid_out_pooling">
+      <obj_property name="ElementShortName">valid_out_pooling</obj_property>
+      <obj_property name="ObjectShortName">valid_out_pooling</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/writeWeight_array">
+      <obj_property name="ElementShortName">writeWeight_array[9:0]</obj_property>
+      <obj_property name="ObjectShortName">writeWeight_array[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/counter_weight">
+      <obj_property name="ElementShortName">counter_weight</obj_property>
+      <obj_property name="ObjectShortName">counter_weight</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/valid_out">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/sum_out">
+      <obj_property name="ElementShortName">sum_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/sum_in">
+      <obj_property name="ElementShortName">sum_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/temp_sum_in">
+      <obj_property name="ElementShortName">temp_sum_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_sum_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/mult_out">
+      <obj_property name="ElementShortName">mult_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/mult_out_shift">
+      <obj_property name="ElementShortName">mult_out_shift[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_out_shift[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/mult_in_input">
+      <obj_property name="ElementShortName">mult_in_input[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_in_input[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/mult_in_weight">
+      <obj_property name="ElementShortName">mult_in_weight[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_in_weight[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/reg_bias">
+      <obj_property name="ElementShortName">reg_bias[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_bias[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(1)\/convolution/temp_output">
+      <obj_property name="ElementShortName">temp_output[15:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_output[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(9)\/\datapath(0)\/router/address_Weight_read">
+      <obj_property name="ElementShortName">address_Weight_read[11:0]</obj_property>
+      <obj_property name="ObjectShortName">address_Weight_read[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_features">
+      <obj_property name="ElementShortName">counter_features</obj_property>
+      <obj_property name="ObjectShortName">counter_features</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_kernel">
+      <obj_property name="ElementShortName">counter_kernel</obj_property>
+      <obj_property name="ObjectShortName">counter_kernel</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_kernel_row">
+      <obj_property name="ElementShortName">counter_kernel_row</obj_property>
+      <obj_property name="ObjectShortName">counter_kernel_row</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_kernel_features">
+      <obj_property name="ElementShortName">counter_kernel_features</obj_property>
+      <obj_property name="ObjectShortName">counter_kernel_features</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_output">
+      <obj_property name="ElementShortName">counter_output</obj_property>
+      <obj_property name="ObjectShortName">counter_output</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_features">
+      <obj_property name="ElementShortName">counter_features</obj_property>
+      <obj_property name="ObjectShortName">counter_features</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/wr_en1">
+      <obj_property name="ElementShortName">wr_en1</obj_property>
+      <obj_property name="ObjectShortName">wr_en1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/wr_en2">
+      <obj_property name="ElementShortName">wr_en2</obj_property>
+      <obj_property name="ObjectShortName">wr_en2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/pooling/data_in1">
+      <obj_property name="ElementShortName">data_in1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in1[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/pooling/data_in2">
+      <obj_property name="ElementShortName">data_in2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in2[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/pooling/data_label">
+      <obj_property name="ElementShortName">data_label[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_label[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/full">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/all_full">
+      <obj_property name="ElementShortName">all_full</obj_property>
+      <obj_property name="ObjectShortName">all_full</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/data_out_pooling">
+      <obj_property name="ElementShortName">data_out_pooling[9:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_pooling[9:0][15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/writeWeight_array">
+      <obj_property name="ElementShortName">writeWeight_array[9:0]</obj_property>
+      <obj_property name="ObjectShortName">writeWeight_array[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/counter_weight">
+      <obj_property name="ElementShortName">counter_weight</obj_property>
+      <obj_property name="ObjectShortName">counter_weight</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/wr_en1">
+      <obj_property name="ElementShortName">wr_en1</obj_property>
+      <obj_property name="ObjectShortName">wr_en1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/wr_en2">
+      <obj_property name="ElementShortName">wr_en2</obj_property>
+      <obj_property name="ObjectShortName">wr_en2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/pooling/data_in1">
+      <obj_property name="ElementShortName">data_in1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in1[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/pooling/data_in2">
+      <obj_property name="ElementShortName">data_in2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in2[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/pooling/data_label">
+      <obj_property name="ElementShortName">data_label[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_label[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/full">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/all_full">
+      <obj_property name="ElementShortName">all_full</obj_property>
+      <obj_property name="ObjectShortName">all_full</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_top/CNN/\para(0)\/pooling/all_full_q">
+      <obj_property name="ElementShortName">all_full_q</obj_property>
+      <obj_property name="ObjectShortName">all_full_q</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/\para(0)\/pooling/fifo_max">
+      <obj_property name="ElementShortName">fifo_max</obj_property>
+      <obj_property name="ObjectShortName">fifo_max</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/pooling/mem1">
+      <obj_property name="ElementShortName">mem1[0:1][15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem1[0:1][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/pooling/mem2">
+      <obj_property name="ElementShortName">mem2[0:1][15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem2[0:1][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_top/CNN/\para(0)\/pooling/mem_int">
+      <obj_property name="ElementShortName">mem_int[0:3]</obj_property>
+      <obj_property name="ObjectShortName">mem_int[0:3]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/\para(1)\/\datapath(0)\/router/offset">
+      <obj_property name="ElementShortName">offset</obj_property>
+      <obj_property name="ObjectShortName">offset</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_kernel">
+      <obj_property name="ElementShortName">counter_kernel</obj_property>
+      <obj_property name="ObjectShortName">counter_kernel</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_kernel_row">
+      <obj_property name="ElementShortName">counter_kernel_row</obj_property>
+      <obj_property name="ObjectShortName">counter_kernel_row</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_kernel_features">
+      <obj_property name="ElementShortName">counter_kernel_features</obj_property>
+      <obj_property name="ObjectShortName">counter_kernel_features</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_output">
+      <obj_property name="ElementShortName">counter_output</obj_property>
+      <obj_property name="ObjectShortName">counter_output</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/counter_features">
+      <obj_property name="ElementShortName">counter_features</obj_property>
+      <obj_property name="ObjectShortName">counter_features</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/test_top/CNN/controller/fsm">
+      <obj_property name="ElementShortName">fsm</obj_property>
+      <obj_property name="ObjectShortName">fsm</obj_property>
+   </wvobject>
+</wave_config>
