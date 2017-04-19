@@ -1,3 +1,5 @@
+# How to compile and run it?
+
 TO COMPILE: make CNN
 
 TO CLEAN: make clean
