@@ -25,19 +25,11 @@ architecture behavioral of tb_fifo is
         clk : in STD_LOGIC;
         rst : in STD_LOGIC;
         wr_en1 : in STD_LOGIC;
-        --rd_en1 : in STD_LOGIC;
         wr_en2 : in STD_LOGIC;
-        --rd_en2 : in STD_LOGIC;
         data_in1 : in STD_LOGIC_VECTOR (15 downto 0);
-        --data_out1 : out STD_LOGIC_VECTOR (15 downto 0);
         data_in2 : in STD_LOGIC_VECTOR (15 downto 0);
-        --data_out2 : out STD_LOGIC_VECTOR (15 downto 0);
         data_label : out STD_LOGIC_VECTOR (15 downto 0);
-        --empty1 : out STD_LOGIC;
-        --full1 : out STD_LOGIC;
-        --empty2 : out STD_LOGIC;
-        --full2 : out STD_LOGIC;
-        --empty : out STD_LOGIC;
+
         full : out STD_LOGIC        
         );
     end component;
@@ -46,19 +38,11 @@ architecture behavioral of tb_fifo is
     signal clk : STD_LOGIC := '0';
     signal rst : STD_LOGIC := '0';
     signal wr_en1 :  STD_LOGIC :='0';
-    --signal rd_en1 :  STD_LOGIC := '0';
     signal wr_en2 :  STD_LOGIC :='0';
-    --signal rd_en2 :  STD_LOGIC := '0';
     signal data_in1 :  STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
     signal data_in2 :  STD_LOGIC_VECTOR (15 downto 0) := (others => '0');
-   -- signal data_out1 :  STD_LOGIC_VECTOR (15 downto 0);
-    --signal data_out2 :  STD_LOGIC_VECTOR (15 downto 0);
     signal data_label : STD_LOGIC_VECTOR (15 downto 0);
-    --signal empty1 : STD_LOGIC;
-    --signal full1 : STD_LOGIC;
-    --signal empty2 : STD_LOGIC;
-    --signal full2 : STD_LOGIC;
-    --signal empty : STD_LOGIC;
+
     signal full : STD_LOGIC;
        
     constant clk_period : time := 10 ns;
@@ -70,20 +54,11 @@ begin
             clk => clk,
             rst => rst,
             data_in1 => data_in1,
-            wr_en1 => wr_en1,
-            --rd_en1 => rd_en1,
-            --data_out1 => data_out1,       
-            --full1 => full1,
-            --empty1 => empty1,          
+            wr_en1 => wr_en1,        
             data_in2 => data_in2,
             wr_en2 => wr_en2,
-            --rd_en2 => rd_en2,
-            --data_out2 => data_out2,          
-            data_label => data_label,           
-            --full2 => full2,
-            --empty2 => empty2,         
+            data_label => data_label,                
             full => full
-            --empty => empty
                  );
     clk_process : process
     begin
