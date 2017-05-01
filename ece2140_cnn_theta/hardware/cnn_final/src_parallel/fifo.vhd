@@ -20,19 +20,10 @@ entity fifo is
         clk : in STD_LOGIC;
         rst : in STD_LOGIC;
         wr_en1 : in STD_LOGIC;
-        --rd_en1 : in STD_LOGIC;
         wr_en2 : in STD_LOGIC;
-        --rd_en2 : in STD_LOGIC;
         data_in1 : in STD_LOGIC_VECTOR (15 downto 0);
-        --data_out1 : out STD_LOGIC_VECTOR (15 downto 0);
         data_in2 : in STD_LOGIC_VECTOR (15 downto 0);
-        --data_out2 : out STD_LOGIC_VECTOR (15 downto 0);
         data_label : out STD_LOGIC_VECTOR (15 downto 0);
-        --empty1 : out STD_LOGIC;
-        --full1 : out STD_LOGIC;
-        --empty2 : out STD_LOGIC;
-        --full2 : out STD_LOGIC;
-        --empty : out STD_LOGIC;
         full : out STD_LOGIC        
         );
 end fifo;
@@ -87,11 +78,9 @@ begin
             end loop;
 		elsif (clk'event and clk = '1') then 
             if (wr_en1 = '1') then
-                -- Not empty fifo
                 if all_full = '1' then
                    for m in 0 to 1 loop
                        mem1(m) <= flush_fifo;
-                   --  mem2(m) <= flush_fifo;
                    end loop;               
                 elsif ((fifo_loop1 = '0') or (fifo_head1 /= '0')) then                
                     if(fifo_head1 = '1') then
@@ -99,12 +88,10 @@ begin
                     elsif(fifo_head1 = '0') then
                         mem1(0) <= data_in1;
                     end if;
-                    --mem1(fifo_head1) <= data_in1;
                     if (fifo_head1 = '1') then
                         fifo_head1 <= '0';
                         fifo_loop1 <= '1';
                     else
-                        --fifo_head1 := fifo_head1 + 1;
                         if(fifo_head1 = '1') then
                             fifo_head1 <= '0';
 
@@ -119,12 +106,7 @@ begin
             	
                 fifo_head1 <= '0';
                 fifo_loop1 <= '0';
-                 --fifo_head2 <= '0';
-              --   fifo_loop2 <= '0';
-         --        mem1_full <= '0';
                  mem1_empty <= '1';
-             --    mem2_full <= '0';
-               --  mem2_empty <= '1';
             elsif( fifo_head1 = '0') then
                 if fifo_loop1 = '1' then
                     mem1_full <= '1';
@@ -152,10 +134,8 @@ begin
             end loop;
         elsif (clk'event and clk = '1') then     			
             if (wr_en2 = '1') then
-                -- Not empty fifo
                 if all_full = '1' then
                    for m in 0 to 1 loop
-                       --mem1(m) <= flush_fifo;
                        mem2(m) <= flush_fifo;
                    end loop;
                 elsif ((fifo_loop2 = '0') or (fifo_head2 /= '0')) then
@@ -164,7 +144,6 @@ begin
                     elsif(fifo_head2 = '0') then
                         mem2(0) <= data_in2;
                     end if;
-                    --mem2(fifo_head2) <= data_in2;
                     if (fifo_head2 = '1') then
                         fifo_head2 <= '0';
                         fifo_loop2 <= '1';
@@ -177,7 +156,6 @@ begin
                         end if;
                     
                     
-                        --fifo_head2 := fifo_head2 + 1;
                     end if;
                 end if;
             end if;	
@@ -216,12 +194,6 @@ begin
                 for i in 0 to 1 loop
                     mem_int(i+2) <= to_integer(signed(mem2(i)));
                 end loop;
-                --fifo_max <= 0;
-                --for j in 0 to 3 loop
-                    --if mem_int(j) >= mem_int(fifo_max) then
-                        --fifo_max <= j;
-                    --end if;
-                --end loop;
                if all_full_q = '1' then
                 if (fifo_max <= 1) then
                    data_label <= mem1(fifo_max);
@@ -240,21 +212,11 @@ begin
 
             if (all_full = '1') then
       
-                --fifo_head1 <= '0';
-               -- fifo_loop1 <= '0';
-                --fifo_head2 <= '0';
-             --   fifo_loop2 <= '0';
-        --        mem1_full <= '0';
-          --      mem1_empty <= '1';
-            --    mem2_full <= '0';
-              --  mem2_empty <= '1';
+
                 for k in 0 to 3 loop
                     mem_int(k) <= 0;
                 end loop;
-               -- for m in 0 to 1 loop
-                  --  mem1(m) <= flush_fifo;
-                  --  mem2(m) <= flush_fifo;
-               -- end loop;
+
                 all_full <= '0';               
             end if;
 		end if;
@@ -263,7 +225,6 @@ begin
     comp_proc: process(clk)
     begin
 
-            --for j in 0 to 3 loop
                 if (clk'event and clk = '1') then
                         
                         if(all_full = '1') then
@@ -271,7 +232,6 @@ begin
                             j <= 0;
                             
                         elsif(mem1_full = '1') and (mem2_full = '1') then
-                            --fifo_max <= 0;
                                 j <= j + 1;
                                 all_full_q <= '0';
 
@@ -284,7 +244,6 @@ begin
                             end if;
                         end if;
                  end if;
-            --end loop;
     end process;
 end behavioral;
 
