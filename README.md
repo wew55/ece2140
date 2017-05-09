@@ -16,7 +16,7 @@ Thibaut Lanois: THL26@pitt.edu
 
 Wen Wen: WEW55@pitt.edu
 
-Jieming Pan: JIP40@pitt.edu
+Jieming Pan: a0123918@u.nus.edu
 
 # BSD License
 
